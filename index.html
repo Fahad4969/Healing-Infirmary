@@ -105,13 +105,7 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#contact">Contact</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#donate-now">Donate Now</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="ambulance-service.php">Ambulance Service</a>
-						</li>
-						
+
 					</ul>
 				</div>
 			</nav>
@@ -451,63 +445,6 @@
 	</section>
 
 	<!-- ============== Testimonial Section End   ============ -->
-
-	<!-- ============== Donate section Start ================= -->
-
-	<section class="testimonial" id="donate-now">
-		<div class="container">
-			<div class="testimonial-heading">
-				<h1 class="text-center">
-					Donate Now
-				</h1>
-				<a href="create-donation.php">Request for Donation</a>
-				<p class="text-center">Tag line</p>
-			</div>
-			<!-- Owl Start -->
-			<div class="testi owl-carousel owl-theme">
-			<?php
-
-				require_once('include/conn.php');
-
-				foreach ($dbh->query('SELECT * FROM donation_request') as $row)
-				{
-					echo "
-					<!--Single Slide Start -->
-					<div class=\"item\">
-						<div class=\"main_card\">
-							<div class=\"d-flex justify-content-center z_calsss\">
-								<div>
-									<img class=\"custom_image\" src=\"assets/img/Fahad.jpg\" alt=\"Card image cap\">
-								</div>
-	
-							</div>
-	
-							<div class=\"card custom_card_main\">
-								<div class=\"custom_test_card\">
-	
-	
-									<b>" . $row["name"] . "</b><br>
-									" . $row["money"] . "</p>
-	
-								</div>
-							</div>
-						</div>
-	
-					</div>
-					<!--Single Slide End -->
-					";
-				}
-				
-
-			?>
-
-			</div>
-			<!-- Owl End -->
-
-		</div>
-	</section>
-
-	<!-- ============== Donate section end ================= -->
 
 	<!-- ============== NewsLetter Section Start  ============ -->
 	<section class="newsletter first_bg_color">
