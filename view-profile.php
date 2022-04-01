@@ -1,7 +1,11 @@
+<head>
+<title>Admin Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
 include('include/conn.php');
-if(strlen($_SESSION['alogin'])==0)
+if(strlen($_SESSION['email'])==0)
 {
 header('location:login.php');
 }

@@ -1,3 +1,7 @@
+<head>
+<title>Login | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
 //connect to DB

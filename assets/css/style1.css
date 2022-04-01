@@ -1,16 +1,15 @@
 /*****************************************************************************************
 *****************************************************************************************
-Project Name: LMS
-Author Name: al bakin tushar
-Client Name: LEDP-2020 D1
-Project Date: 3-07-2020
-Project Type: Education
+Project Name: Healing Infirmary System
+Author Name: Ahnaf Sayed, Fahad Mollah, Sheikh Obidullah, Sharmin Sulatana 
+Project Date: 21-01-2022
+Project Type: Hospital Management System
 Project Section:
 				1.Top Header
 				2.Nav Header
 				3.Slider Section
 				4.About Section
-				5.Courses Section
+				5.Developers Section
 				6.Facts Section
 				7.Recent News Section
 				8.News Letter Section
@@ -55,7 +54,7 @@ ul{
 }
 .font_35{
 	font-size: 35px;
-	color: #56ab2f;
+	color: #2f80ab;
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
 	border: none;
@@ -80,13 +79,13 @@ a:hover{
 					Common CSS Start
 ***********************************************************************************************/
 .first_color{
-	color: #56ab2f;
+	color: #2f80ab;
 }
 .second_color{
 	color: #1e1d1d;
 }
 .first_bg_color{
-	background-color: #56ab2f;
+	background-color: #2f80ab;
 }
 .second_bg_color{
 	background-color: #1e1d1d;
@@ -157,10 +156,10 @@ a:hover{
 	font-weight: bold !important;
 }
 .active .nav-link{
-	color: #56ab2f !important;
+	color: #2f80ab !important;
 }
 .nav-link:focus{
-	color: #56ab2f !important;
+	color: #2f80ab !important;
 }
 /**********************************************************************************************
 					Nav Header CSS End
@@ -205,14 +204,25 @@ a:hover{
 	padding-top: 40px;
 	padding-bottom: 50px;
 }
+.his{
+	width: 100%;
+	height: auto;
+
+}
+.his_bg{
+	background-image: url(../img/bg3.jpg);
+	background-attachment: fixed;
+	height: auto;
+	width: 100%;
+}
 .about_bg{
-	background-image: url(../img/acadimy.png);
+	background-image: url(../img/HIS.jpg);
 	height: 90%;
 	width: 100%;
 	margin-left: 19%;
 	background-repeat: no-repeat;
 }
-.principle_img{
+.HIS_img{
 	height: 83%;
 	width: 40%;
 	margin-top: 15%;
@@ -222,7 +232,7 @@ a:hover{
 					About Section CSS End
 ***********************************************************************************************/
 /**********************************************************************************************
-					Courses Section CSS Start
+					Developers Section CSS Start
 ***********************************************************************************************/
 .courses{
 	padding-top: 80px;
@@ -231,14 +241,14 @@ a:hover{
 	padding-bottom: 50px;
 }
 .card-body{
-	border: 1px solid #56ab2f;
+	border: 1px solid #2f80ab;
 	border-top: none;
 }
 .list{
 	list-style: none;
 }
 .list-item{
-	border: 1px solid #56ab2f;
+	border: 1px solid #2f80ab;
 	width: 150px;
 	text-align: center;
 	padding: 10px;
@@ -250,7 +260,7 @@ a:hover{
 .list-item:nth-child(2){
 	border-left: none;
 	border-right: none;
-	background-color: #56ab2f;
+	background-color: #2f80ab;
 	color: white;
 }
 .list-item:nth-child(3){
@@ -263,7 +273,7 @@ a:hover{
 	margin-left: 33%;
 }
 /**********************************************************************************************
-					Courses Section CSS End
+					Developers Section CSS End
 ***********************************************************************************************/
 /**********************************************************************************************
 					Facts Section CSS Start
@@ -274,7 +284,7 @@ a:hover{
 
 }
 .facts_bg{
-	background-image: url(../img/count.png);
+	background-image: url(../img/bg3.jpg);
 	background-attachment: fixed;
 	height: auto;
 	width: 100%;
@@ -323,13 +333,13 @@ a:hover{
 /**********************************************************************************************
 					Recent News Section CSS Start
 ***********************************************************************************************/
-.testimonial{
+.contact{
 padding-top: 80px;
 background-image: url(../img/lacture_bg.png);
 
 padding-bottom: 80px !important;
 }
-.testimonial-heading{
+.contact-heading{
 	padding-bottom: 50px;
 }
 
@@ -385,7 +395,7 @@ input[type=email]::placeholder {
 }
 .mailbtn{
 	padding: 10px 15px;
-	border-color: #9bc887;
+	border-color: #2f80ab;
 
 }
 /**********************************************************************************************
@@ -427,7 +437,7 @@ input[type=email]::placeholder {
 .footer_bottom{
 	padding: 0;
 	margin: 0;
-	border-top: 2px solid #56ab2f;
+	border-top: 2px solid #2f80ab;
 	/*line-height: 100px;*/
 	background-color: #1e1d1d;
 	padding-top: 10px;
@@ -440,7 +450,7 @@ input[type=email]::placeholder {
 	height: 35px !important;
 	width: 35px !important;
 	background-color: transparent;
-	border: 1px solid #56ab2f;
+	border: 1px solid #2f80ab;
 	margin-left: 5px;
 	border-radius: 50%;
 }
@@ -458,32 +468,13 @@ input[type=email]::placeholder {
 	padding-right: 10px;
 }
 .custom_list li a:hover{
-	color: #56ab2f;
+	color: #2f80ab;
 }
 /**********************************************************************************************
 					Footer Section CSS End
 ***********************************************************************************************/
 
-/**********************************************************************************************
-					 Scroll CSS Start
-***********************************************************************************************/
-.scroll-top {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 25px;
-  right: 20px;
-  display: none;
-  border-radius: 50%;
-  background-color: #56ab2f;
-}
-.scroll-top i {
-  display: inline-block;
-  color: #fff;
-}
-/**********************************************************************************************
-					 Scroll CSS End
-***********************************************************************************************/
+
 /**********************************************************************************************
 					Responsive CSS Start
 ***********************************************************************************************/
@@ -526,6 +517,45 @@ input[type=email]::placeholder {
 
 
 }
+
+/**********************************************************************************************
+					 Scroll To Top CSS Start
+***********************************************************************************************/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+  }
+  html {
+	scroll-behavior: smooth;
+  }
+  #progress {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	height: 70px;
+	width: 70px;
+	display: none;
+	place-items: center;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+  }
+  #progress-value {
+	display: block;
+	height: calc(100% - 15px);
+	width: calc(100% - 15px);
+	background-color: #ffffff;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	font-size: 35px;
+	color: #001a2e;
+  }
+/**********************************************************************************************
+					 Scroll To Top CSS End
+***********************************************************************************************/
 
 
 /**********************************************************************************************

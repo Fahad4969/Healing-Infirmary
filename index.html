@@ -6,8 +6,8 @@
 	<!-- Responsive Meta-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<!-- Website SEO -->
-	<meta name="keyword" content="lms, online education, school, online school" />
-	<meta name="description" content="Free online School Management System" />
+	<meta name="keyword" content="HIS, Online Hospital Management System" />
+	<meta name="description" content="Online Hospital Management System" />
 	<!-- Author -->
 	<meta name="author" content="Ahnaf Sayed" />
 	<!-- Favicon icon -->
@@ -29,6 +29,8 @@
 	<link rel="stylesheet" href="assets/font/css/font-awesome.min.css" />
 	<!-- Custom Style CSS -->
 	<link rel="stylesheet" href="assets/css/style1.css" />
+	<link rel="icon" href="assets/img/mlogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"rel="stylesheet"/>
 </head>
 
 <body>
@@ -41,7 +43,7 @@
 					<ul class="d-flex flex-row bd-highlight mb-3 top_list">
 						<li class="">
 							<a href="#" class="text-white">
-								<i class="bi bi-phone"></i> <a href="tel:01866263500">(+880) 186 626 3500</a>
+								<i class="bi bi-phone"></i> <a href="tel:01866263500">+8801866263500</a>
 							</a>
 						</li>
 						<li class="">
@@ -83,7 +85,7 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light ">
 				<a class="navbar-brand" href="#">
-					<h3 class="logo me-auto"><a href="index.html">Healing Infirmary</a></h3>
+					<h3 class="logo me-auto"><a href="home.php">Healing Infirmary</a></h3>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -92,18 +94,19 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="home.html">Home <span class="sr-only"></span></a>
+							<a class="nav-link" href="home.php">Home <span class="sr-only"></span></a>
 						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#recentnews">Recent News</a>
-
-						</li>
-						<li class="nav-item">
+                        <li class="nav-item">
 							<a class="nav-link" href="#about">About</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#recentnews">Recent News</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Ambulance.php">Ambulance</a>
 						</li>
 
 					</ul>
@@ -121,58 +124,104 @@
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="d-block w-100 h-100" src="assets/img/slider/slider (1).jpg" alt="First slide">
+					<img class="d-block w-100 h-100" src="assets/img/slider/Slider1.jpg" alt="First slide">
 					<div class="carousel-caption d-none d-md-block">
 						<h2 class="text-dark">Take the first step to <br>
 							<span class="text-info">Cure</span> with us
 						</h2>
 						<p class="text-dark">
-							From us you will be able to find best doctors of Bangladesh .
+							From us you will be able to find best doctors of Bangladesh.
 						</p>
-						<button class="btn bg-info text-light">VIEW SERVICE</button>
+						<a href="Login.php"><button class="btn bg-info text-light">VIEW SERVICE</button></a>
 						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="assets/img/slider/slider6.jpeg" alt="Second slide">
+					<img class="d-block w-100" src="assets/img/slider/Slider2.jpg" alt="Second slide">
 					<div class="carousel-caption d-none d-md-block">
 						<h2 class="text-dark">Take the first step to <br>
 							<span class="text-info">Cure</span> with us
 						</h2>
 						<p class="text-dark">
-							All the best doctors of Bangladesh are here .
+							All the best doctors of Bangladesh are here.
 						</p>
-						<button class="btn bg-info text-light"> VIEW SERVICE</button>
+						<a href="Login.php"><button class="btn bg-info text-light"> VIEW SERVICE</button></a>
 						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img class="d-block w-100" src="assets/img/slider/slider7.jpg" alt="Third slide">
+					<img class="d-block w-100" src="assets/img/slider/Slider3.jpg" alt="Third slide">
 					<div class="carousel-caption d-none d-md-block">
 						<h2 class="text-dark">Take the first step to <br>
 							<span class="text-info">Cure</span> with us
 						</h2>
 						<p class="text-dark">
-							Take treatment from our best doctors .
+							Take treatment from our best doctors.
 						</p>
-						<a href="course.html"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
+						<a href="Login.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
 						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 
 				<div class="carousel-item">
-					<img class="d-block w-100 " src="assets/img/slider/slider5.jpg" alt="forth slide">
+					<img class="d-block w-100 " src="assets/img/slider/Slider4.jpg" alt="Forth slide">
 					<div class="carousel-caption d-none d-md-block">
 						<h2 class="text-dark">Take the first step to <br>
 							<span class="text-info">Cure</span> with us
 						</h2>
 						<p class="text-dark">
-							All the best doctors of Bangladesh are here .
+							All the best doctors of Bangladesh are here.
 						</p>
-						<a href="course.html"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
+						<a href="Login.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
+						<button class="btn btn-outline-info text-dark">READ MORE</button>
+					</div>
+				</div>
+				
+				<div class="carousel-item">
+					<img class="d-block w-100 " src="assets/img/slider/Slider5.jpg" alt="Fifth slide">
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="text-dark">Take the first step to <br>
+							<span class="text-info">Cure</span> with us
+						</h2>
+						<p class="text-dark">
+							Find all the best services from one portal.
+						</p>
+						<a href="Login.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
+						<button class="btn btn-outline-info text-dark">READ MORE</button>
+					</div>
+				</div>
+				
+				<div class="carousel-item">
+					<img class="d-block w-100 " src="assets/img/slider/Slider6.jpg" alt="Sixth slide">
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="text-dark">Take the first step to <br>
+							<span class="text-info">Cure</span> with us
+						</h2>
+						<p class="text-dark">
+							Get instant Ambulance service.
+						</p>
+						<a href="Ambulance.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
+						<button class="btn btn-outline-info text-dark">READ MORE</button>
+					</div>
+				</div>
+				
+				<div class="carousel-item">
+					<img class="d-block w-100 " src="assets/img/slider/Slider7.jpg" alt="Seventh slide">
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="text-dark">Take the first step to <br>
+							<span class="text-info">Cure</span> with us
+						</h2>
+						<p class="text-dark">
+							Get instant Medicine service.
+						</p>
+						<a href="Login.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
 						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
@@ -192,23 +241,25 @@
 
 	<!-- ============== About Us Section Start =============-->
 	<section id="about">
+	<div class="his_bg">
 		<div class="commn_margin custom_left_margin">
 			<div class="row">
 				<div class="col-md-5 mr-1">
-					<h2 class="custom_h2">About Healing Infirmary</h2>
-					<p class="text-justify custom_padding">
+					<h2 class="custom_h2" class="text-lime">About Healing Infirmary</h2>
+					<p class="text-justify custom_padding" class="text-lime">
 						This is one of the best Healing Infirmary website of Bangladesh. From here you can get information of doctor, hospital, order medicine from pharmacy, book ambulance and also can make appointment.
 					</p>
 					<!-- <img src="assets/img/signature.png" alt="!"> -->
-					<p>Thank you for visiting us.</p>
-				</div>
+					<p class="text-green">Thank you for visiting us.</p>
+			    </div>
 				<div class="col-md-6 ">
-					<div class="about_bg">
-						<img src="assets/img/Ahnaf.jpg" alt="" class="principle_img">
-					</div>
+							<div class="about_bg">
+								<img src="assets/img/Ahnaf.jpg" alt="" class="HIS_img">
+							</div>
 				</div>
-			</div>
-		</div>
+		    </div>
+	    </div>
+	</div>
 	</section>
 	<!-- ============== About Us Section End =============-->
 
@@ -222,23 +273,23 @@
 						<p class="text-white">
 							Achievement of ours...
 						</p>
-						<button class="btn btn-outline-info"><a href="contact.html" class="text-white">CONTACT US</a></button>
+						<button class="btn btn-outline-info"><a href="#contact" class="text-white">CONTACT US</a></button>
 					</div>
 					<div class="col-md-2 text-center">
 						<h2 class="counter text-red">102+</h2>
-						<p class="text-white">Register User's</p>
+						<p class="text-white">Registered User's</p>
 					</div>
 					<div class="col-md-2 text-center">
 						<h2 class="counter text-red">1200+</h2>
-						<p class="text-white">Register Doctor's</p>
+						<p class="text-white">Registered Doctor's</p>
 					</div>
 					<div class="col-md-2 text-center">
 						<h2 class="counter text-red">8</h2>
-						<p class="text-white">Our Service</p>
+						<p class="text-white">Our Services</p>
 					</div>
 					<div class="col-md-2 text-center">
 						<h2 class="counter text-red">10+</h2>
-						<p class="text-white">Award Winning</p>
+						<p class="text-white">Award Winnings</p>
 					</div>
 				</div>
 			</div>
@@ -253,7 +304,7 @@
 				<h1 class="text-center">
 					Recent News
 				</h1>
-				<p class="text-center"> Get update of recent events , news , discounts , notices from here .</p>
+				<p class="text-center"> Get update of recent events, news, discounts, notices from here.</p>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-sm-12 col-lg-6">
@@ -281,7 +332,7 @@
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-7">
 								<div class="custom_body_2">
-									<h4 class="card-title"><b>Online Appointment is Going on .</b></h4>
+									<h4 class="card-title"><b>Online Appointment is Going on.</b></h4>
 									<p>By <span class="first_color">Rechard Jones</span></p>
 									<p>21 Jan 2022 | <i class="fa fa-comments" aria-hidden="true"></i> 75</p>
 									<p class="card-text text-left">
@@ -323,20 +374,24 @@
 				</div>
 			</div>
 			<div class="text-center custom_padding_2">
-				<button class="btn btn-outline-success text-dark">BROWSE ALL NEWSES</button>
+				<button class="btn btn-outline-info text-dark">BROWSE ALL NEWS</button>
 			</div>
 	</section>
 
 	<!-- ============== Recent News End   ============ -->
 
 	<!-- ============== Testimonial Section Start ============ -->
-	<section class="testimonial">
+	<section id="contact">
+	<section class="contact">
 		<div class="container">
-			<div class="testimonial-heading">
+			<div class="contact-heading">
+			<h1 class="text-center">
+			<button class="btn btn-outline-info text-dark"><a href="Donate.php" class="text-black">DONATE</a></button>
+			</h1>	
 				<h1 class="text-center">
 					Developers
 				</h1>
-				<p class="text-center"> Developers who build this website .</p>
+				<p class="text-center"> Developers who build this website.</p>
 			</div>
 			<!-- Owl Start -->
 			<div class="testi owl-carousel owl-theme">
@@ -402,7 +457,7 @@
 							<div class="custom_test_card">
 
 
-								<b>Sheikh Obaidullah</b><br>
+								<b>Sheikh Obidullah</b><br>
 								Back End Developer</p>
 
 							</div>
@@ -442,6 +497,7 @@
 			<!-- Owl End -->
 
 		</div>
+		</section>
 	</section>
 
 	<!-- ============== Testimonial Section End   ============ -->
@@ -451,9 +507,9 @@
 		<div class="container">
 			<div class="newsletter-heading">
 				<h1 class="text-center text-light">
-					Send us email .
+					Send us email.
 				</h1>
-				<p class="text-center text-light"> Send us Email and Signup to receive email updates about courses and doctor .</p>
+				<p class="text-center text-light"> Send us Email and Signup to receive email updates about courses and doctor.</p>
 			</div>
 			<div class="row">
 				<div class="col-md-4"></div>
@@ -485,7 +541,7 @@
 						&copy; Copyright <span id="date"></span>. All Rights Reserved
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center text-white pt-3 pb-3">
-						Design by <a href="home.html">Healing Infirmary System</a>
+						Design by <a href="home.php">Healing Infirmary System</a>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pt-3 pb-3">
 						<ul class="list d-flex justify-content-center custom_list">

@@ -1,4 +1,3 @@
-
 <!-- Sidebar menu-->
 <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
 <aside class="app-sidebar">
@@ -16,9 +15,6 @@
 
    <?php  }?>
     <div>
-      
-      
-      
       <?php
       if(isset($_SESSION["email"])){
         echo "<p class='app-sidebar__user-name'>".$row["name"]."</p>";

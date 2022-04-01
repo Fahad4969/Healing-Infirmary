@@ -1,3 +1,7 @@
+<head>
+<title>Admin Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
 
