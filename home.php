@@ -509,7 +509,7 @@
 				<h1 class="text-center text-light">
 					Send us email.
 				</h1>
-				<p class="text-center text-light"> Send us Email and Signup to receive email updates about courses and doctor.</p>
+				<p class="text-center text-light"> Send us Email and Signup to receive email updates about doctors and recent health tips.</p>
 			</div>
 			<div class="row">
 				<div class="col-md-4"></div>
