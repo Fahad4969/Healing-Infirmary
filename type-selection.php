@@ -1,3 +1,7 @@
+<head>
+<title>Type Selection | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php 
 	include('include/nav.php');
  ?>

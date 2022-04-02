@@ -25,15 +25,14 @@ $row = mysqli_fetch_array($result);
 	else{
 	echo "No result found";
 	}
-
 if(strlen($_SESSION['email'])==0)
-{
+  { 
 header('location:login.php');
 }
 else{
 include_once('include/header.php');
 include_once('include/admin-sidebar.php');
-$sql = 'SELECT * FROM `users` ';
+$sql = 'SELECT * FROM `ambulance`';
 $message="";
 if(isset($dbh)){
 //connection check
@@ -44,12 +43,13 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main class="app-content">
   <div class="app-title">
     <div>
-      <h1><i class="fa fa-th-list"></i>User list </h1>
+      <h1><i class="fa fa-th-list"></i>Ambulance list</h1>
+     
     </div>
     <ul class="app-breadcrumb breadcrumb side">
       <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-      <li class="breadcrumb-item">Admin Dashboard</li>
-      <li class="breadcrumb-item active"><a href="#">view profile</a></li>
+      <li class="breadcrumb-item">Admin Dashbord</li>
+      <li class="breadcrumb-item active"><a href="#">Ambulance List</a></li>
     </ul>
   </div>
   <div class="row">
@@ -61,11 +61,9 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Mobile</th>
-                  <th>Image</th>
-         
+                  <th>Driver Name</th>
+                  <th>Contact Number</th>
+                  <th>License No.</th>      
                   <th align="center">Action</th>
                 </tr>
               </thead>
@@ -76,17 +74,14 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 ?>
                 <tr>
                   <td><?php echo $count; ?></td>
-                  <td><?php echo $value['name']; ?></td>
-                  <td><?php echo $value['email']; ?></td>
-                  <td><?php echo $value['mobile']; ?></td>
-                  <td><?php echo $value['image']; ?></td>
-
-                  
+                  <td><?php echo $value['Driver_Name']; ?></td>
+                  <td><?php echo $value['Contact_Number']; ?></td>
+                  <td><?php echo $value['License_No']; ?></td>
                   <td align="center">
                     <a href="edit-profile.php?id=<?php echo $value['id']; ?>" class="btn btn-success">
                       <i class="fa fa-pencil-square" aria-hidden="true"></i>
                     </a>
-                    <a href="delete-user.php?id=<?php echo $value['id']; ?>" class="btn btn-danger">
+                    <a href="delete-ambulance.php?id=<?php echo $value['id']; ?>" class="btn btn-danger">
                       <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
                   </td>
@@ -103,9 +98,10 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
   </div>
 </main>
+	  
 <?php
 include_once('include/footer.php');
 include_once('include/Hfooter.php');
 }
 }
-?>
+?> 

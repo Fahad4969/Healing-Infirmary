@@ -1,3 +1,7 @@
+<head>
+<title>Doctor Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
 include_once('include/conn.php');
@@ -83,7 +87,7 @@ include_once('include/Doctor-sidebar.php');
 		</div>
 		<ul class="app-breadcrumb breadcrumb">
 			<li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-			<li class="breadcrumb-item">Dashbord</li>
+			<li class="breadcrumb-item">Doctor Dashbord</li>
 			
 		</ul>
 	</div>

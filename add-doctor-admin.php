@@ -1,13 +1,32 @@
-<head>
-<title>Doctor Registration | Healing Infirmary</title>
-<link rel="icon" href="assets/img/mlogo.png">
-</head>
+<?php
+session_start();
+
+include_once('include/conn.php');
+include_once('sql.php');
+$_SESSION['email'];
+
+$eamil=$_SESSION['email'];
+ 
+$result = mysqli_query($conn,"SELECT * FROM admin_registration Where email='$eamil'");
+
+
+if (mysqli_num_rows($result) > 0) {
+
+	$i=0;
+$row = mysqli_fetch_array($result);
+
+	
+	}
+
+	else{
+	echo "No result found";
+	}
+?>
 <?php
 session_start();
 //connect to DB
-require_once('include/conn.php');
-include_once('include/registration-header.php');
-
+include_once('include/header.php');
+include_once('include/admin-sidebar.php');
 //Flash Message
 $message="";
 if(isset($dbh)){
@@ -84,8 +103,8 @@ else{
 
 //STMT1 FOR LOGIN TABLE
 if($stmt1->execute()){
-  $message="Insert Row Scuccess";
- header("Location:login.php");
+  $message="Insert Row Success";
+ header("Location:add-doctor-admin.php");
 }
 else{
  $message="";
@@ -94,8 +113,8 @@ else{
 
 }
 if($stmt->execute()){
-  $message="Insert Row Scuccess";
- header("login.php");
+  $message="Insert Row Success";
+ header("add-doctor-admin.php");
 }
 else{
  $message="Insert Row Fail";
@@ -106,11 +125,6 @@ else{
 
 }
 ?>
-
-
-
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -120,16 +134,13 @@ else{
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/docreg.css">
     <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login -  Admin</title>
-  
+    <title>Admin Dashboard | Healing Infirmary</title>
+	<link rel="icon" href="assets/img/mlogo.png">
   </head>
   <body>
     <section class="material-half-bg">
-      <div class="cover"></div>
     </section>
     <section class="login-content">
       <div class="logo">
@@ -139,8 +150,8 @@ else{
         <!-- <form action="" method="post" enctype="multipart/form-data"> -->
           
        
-        <form action="doctor-registration.php" method="post" class="login-form" enctype="multipart/form-data">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user-md"></i>Doctor Registration</h3>
+        <form action="add-doctor-admin.php" method="post" class="login-form" enctype="multipart/form-data">
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user-md"></i>Add Doctor</h3>
            <div class="message text-danger"><?php if($message!="") { echo $message; } ?></div> 
 
 
@@ -238,15 +249,12 @@ else{
             <input type="file" name="image" id="" class="form-control">
           </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block" type="submit" name="submit" value="submit"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN UP</button>
+            <button class="btn btn-primary btn-block" type="submit" name="submit" value="submit"><i class="fa fa-sign-in fa-lg fa-fw"></i>Add Doctor</button>
             <br> 
           </div>
-
-          	     <center> <a href="login.php" >Already have an account?</a></center>
         </form>
-
-        
       </div>
+
 
 
 
@@ -291,4 +299,8 @@ else{
       });
     </script>
   </body>
+	  <?php
+	  include_once('include/footer.php');
+      include_once('include/Hfooter.php');
+	  ?>
 </html>

@@ -1,7 +1,32 @@
 <?php
 session_start();
+
+include_once('include/conn.php');
+include_once('sql.php');
+$_SESSION['email'];
+
+$eamil=$_SESSION['email'];
+ 
+$result = mysqli_query($conn,"SELECT * FROM admin_registration Where email='$eamil'");
+
+
+if (mysqli_num_rows($result) > 0) {
+
+	$i=0;
+$row = mysqli_fetch_array($result);
+
+	
+	}
+
+	else{
+	echo "No result found";
+	}
+?>
+<?php
+session_start();
 //connect to DB
-require_once('include/conn.php');
+include_once('include/header.php');
+include_once('include/admin-sidebar.php');
 $message="";
 if(isset($dbh)){
 //connection check
@@ -49,8 +74,8 @@ if($passwordtest == $confirmpassword){
   
   
   if($stmt->execute()){
-       $message="Insert Row Scuccess";
-      header("Location:dashboard.php");
+       $message="Insert Row Success";
+      header("Location:admin_registration.php");
     }
     else{
       $message="Insert Row Fail";
@@ -58,8 +83,8 @@ if($passwordtest == $confirmpassword){
 
   //STMT1 FOR LOGIN TABLE
     if($stmt1->execute()){
-      $message="Insert Row Scuccess";
-     header("Location:dashboard.php");
+      $message="Insert Row Success";
+     header("Location:admin_registration.php");
    }
    else{
      $message="Insert Row Fail";
@@ -68,12 +93,12 @@ if($passwordtest == $confirmpassword){
 }
 else{
   $message="confirm password Not match!";
-  header("Location:register.php");
+  header("Location:admin_registration.php");
 }
 }
 else{
   $message="You file is not an image!";
-  header("Location:register.php");
+  header("Location:admin_registration.php");
 }
 }
 }
@@ -88,10 +113,9 @@ else{
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Registration -  Admin</title>
+    <title>Admin Dashboard |  Healing Infirmary</title>
+	<link rel="icon" href="assets/img/mlogo.png">
   
   </head>
   <body>
@@ -107,36 +131,36 @@ else{
           
        
         <form action="admin_registration.php" method="post" class="login-form" enctype="multipart/form-data">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-users"></i>Register</h3>
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-users"></i>Add Admin</h3>
            <div class="message text-danger"><?php if($message!="") { echo $message; } ?></div> 
           <div class="form-group">
-            <label class="control-label">USERNAME <span class="text-danger">*</span></label>
+            <label class="control-label text-dark">USERNAME <span class="text-danger">*</span></label>
             <input type="text" name="name" id="" class="form-control" placeholder="Name" autocomplete="off">
           </div>
           <div class="form-group">
-            <label class="control-label">USER EMAIL <span class="text-danger">*</span></label>
+            <label class="control-label text-dark">USER EMAIL <span class="text-danger">*</span></label>
             <input type="email" name="email" id="" class="form-control" placeholder="Email" autocomplete="off">
           </div>
           <div class="form-group">
-            <label class="control-label">MOBILE <span class="text-danger">*</span></label>
+            <label class="control-label text-dark">MOBILE <span class="text-danger">*</span></label>
             <input type="tel" name="mobile" id="" class="form-control" placeholder="Mobile no" autocomplete="off">
           </div>
 
           <div class="form-group">
-            <label class="control-label">PASSWORD <span class="text-danger">*</span></label>
+            <label class="control-label text-dark">PASSWORD <span class="text-danger">*</span></label>
             <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off" id="password">
           </div>
           <div class="form-group">
-            <label class="control-label">RE-TYPE PASSWORD <span class="text-danger">*</span></label>
+            <label class="control-label text-dark">RE-TYPE PASSWORD <span class="text-danger">*</span></label>
             <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="RE-type Password" autocomplete="off">
             <span id='message'></span>
           </div>
           <div class="form-group">
-            <label class="control-label">Image <span class="text-danger">*</span></label>
+            <label class="control-label text-dark">Image <span class="text-danger">*</span></label>
             <input type="file" name="image" id="" class="form-control">
           </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block" type="submit" name="submit" value="submit"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN UP</button>
+            <button class="btn btn-primary btn-block" type="submit" name="submit" value="submit"><i class="fa fa-sign-in fa-lg fa-fw"></i>Add Admin</button>
           </div>
 
         </form>
@@ -163,4 +187,8 @@ else{
       });
     </script>
   </body>
+  	  <?php
+	  include_once('include/footer.php');
+      include_once('include/Hfooter.php');
+	  ?>
 </html>

@@ -61,7 +61,7 @@ include_once('include/admin-sidebar.php');
               <p><b>
                    <?php 
 
-                  $admin=$dbh->prepare("SELECT count(id) FROM users");
+                  $admin=$dbh->prepare("SELECT count(id) FROM admin_registration");
 
                   $admin->execute();
                   $adminrow = $admin->fetch(PDO::FETCH_NUM);
@@ -82,7 +82,7 @@ include_once('include/admin-sidebar.php');
                 
                   <?php 
 
-                  $admin=$dbh->prepare("SELECT count(id) FROM admin_registration");
+                  $admin=$dbh->prepare("SELECT count(id) FROM doctor_reg");
                   $admin->execute();
                   $adminrow = $admin->fetch(PDO::FETCH_NUM);
                   $admincount = $adminrow[0];

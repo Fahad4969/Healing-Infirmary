@@ -1,3 +1,7 @@
+<head>
+<title>User Dashbord | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
 include('include/conn.php');

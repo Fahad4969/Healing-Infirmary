@@ -1,3 +1,7 @@
+<head>
+<title>User Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
 include('include/conn.php');
@@ -86,7 +90,7 @@ $email=$_SESSION['email'];
 
 
 if($stmt->execute()){
-  $message="Insert Row Scuccess";
+  $message="Insert Row Success";
  header("Location:view-document.php");
 }
 else{
@@ -110,7 +114,7 @@ else{
 <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="fa fa-dashboard"></i> user Dashboard</h1>
+          <h1><i class="fa fa-dashboard"></i>User Dashboard</h1>
           <p></p>
         </div>
         <ul class="app-breadcrumb breadcrumb">

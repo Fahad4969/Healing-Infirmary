@@ -44,21 +44,21 @@
      <li>
       <a class="app-menu__item active" href="doctor-profile.php">
        <i class="app-menu__icon fa fa-edit"></i>
-        <span class="app-menu__label">view Profile</span>
+        <span class="app-menu__label">View Profile</span>
       </a>
     </li>
      
       <li>
       <a class="app-menu__item active" href="apointment-list.php">
        <i class="app-menu__icon fa fa-edit"></i>
-        <span class="app-menu__label">Apointment List </span>
+        <span class="app-menu__label">Appointment List </span>
       </a>
     </li> 
    
     <li>
       <a class="app-menu__item active" href="approve_apointment.php">
        <i class="app-menu__icon fa fa-edit"></i>
-        <span class="app-menu__label"> Approve Apointment</span>
+        <span class="app-menu__label"> Approve Appointment</span>
       </a>
     </li>
 
@@ -67,7 +67,7 @@
      <li>
       <a class="app-menu__item active" href="search_approve_pataint.php">
        <i class="app-menu__icon fa fa-edit"></i>
-        <span class="app-menu__label"> Search approve patient </span>
+        <span class="app-menu__label"> Search Approved Patients </span>
       </a>
     </li> 
    

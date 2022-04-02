@@ -1,3 +1,7 @@
+<head>
+<title>User Registration | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
 //connect to DB
@@ -127,7 +131,7 @@ else{
           
        
         <form action="register.php" method="post" class="login-form" enctype="multipart/form-data">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-users"></i>User Register</h3>
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-users"></i>User Registration</h3>
            <div class="message text-danger"><?php if($message!="") { echo $message; } ?></div> 
           <div class="form-group">
             <label class="control-label text-dark">USERNAME <span class="text-danger">*</span></label>

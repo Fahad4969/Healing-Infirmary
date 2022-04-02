@@ -1,5 +1,7 @@
-
-
+<head>
+<title>Doctor Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
  require_once('sql.php');
@@ -89,7 +91,7 @@ else{
               <p><b>
                    <?php 
 
-                  $admin=$dbh->prepare("SELECT count(id) FROM users");
+                  $admin=$dbh->prepare("SELECT count(id) FROM appointment_req");
 
                   $admin->execute();
                   $adminrow = $admin->fetch(PDO::FETCH_NUM);
@@ -107,8 +109,13 @@ else{
             <div class="info">
               <h4>Approve Apointment</h4>
               <p><b>
-                
-                 5
+			     <?php 
+                  $admin=$dbh->prepare("SELECT count(id) FROM apporved_appointment");
+                  $admin->execute();
+                  $adminrow = $admin->fetch(PDO::FETCH_NUM);
+                  $admincount = $adminrow[0];
+                  echo $admincount;            
+                  ?>
               </b></p>
             </div>
           </div>

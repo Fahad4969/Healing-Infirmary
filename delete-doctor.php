@@ -1,3 +1,7 @@
+<head>
+<title>Admin Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 $host='localhost';
 $username='root';
@@ -8,12 +12,13 @@ if(!$conn)
     {
       die('Could not Connect MySql Server:' .mysql_error());
     }
-$sql = "DELETE FROM doucument WHERE email='$email'" ;
+
+$sql = "DELETE FROM doctor_reg WHERE id='$id'" ;
 $data=mysqli_query($conn,$sql);
 if($data){
 
-echo "Data deleted successfully";
-header("Location:view-document.php");
+echo "data deleted successfully";
+header("Location:view-doctor-profile.php");
 }
 else{
 

@@ -33,7 +33,7 @@ header('location:login.php');
 else{
 include_once('include/header.php');
 include_once('include/admin-sidebar.php');
-$sql = 'SELECT * FROM `users` ';
+$sql = 'SELECT * FROM `doctor_reg` ';
 $message="";
 if(isset($dbh)){
 //connection check
@@ -44,7 +44,7 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main class="app-content">
   <div class="app-title">
     <div>
-      <h1><i class="fa fa-th-list"></i>User list </h1>
+      <h1><i class="fa fa-th-list"></i>Doctor list </h1>
     </div>
     <ul class="app-breadcrumb breadcrumb side">
       <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
@@ -61,10 +61,18 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
               <thead>
                 <tr>
                   <th>#</th>
+                  <th>Title</th>
                   <th>Name</th>
-                  <th>Email</th>
-                  <th>Mobile</th>
-                  <th>Image</th>
+                  <th>Specialist</th>
+                  <th>Date of Birth</th>
+				  <th>NID</th>
+				  <th>BMDC No.</th>
+				  <th>Mobile</th>
+				  <th>Email</th>
+				  <th>Password</th>
+				  <th>Address</th>
+				  <th>Gender</th>
+				  <th>Image</th>
          
                   <th align="center">Action</th>
                 </tr>
@@ -76,17 +84,25 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 ?>
                 <tr>
                   <td><?php echo $count; ?></td>
+                  <td><?php echo $value['title']; ?></td>
                   <td><?php echo $value['name']; ?></td>
-                  <td><?php echo $value['email']; ?></td>
-                  <td><?php echo $value['mobile']; ?></td>
-                  <td><?php echo $value['image']; ?></td>
+                  <td><?php echo $value['specialist']; ?></td>
+                  <td><?php echo $value['birthdate']; ?></td>
+				  <td><?php echo $value['nid']; ?></td>
+				  <td><?php echo $value['bmdc']; ?></td>
+				  <td><?php echo $value['mobile']; ?></td>
+				  <td><?php echo $value['email']; ?></td>
+				  <td><?php echo $value['password']; ?></td>
+				  <td><?php echo $value['address']; ?></td>
+				  <td><?php echo $value['gender']; ?></td>
+				  <td><?php echo $value['image']; ?></td>
 
                   
                   <td align="center">
                     <a href="edit-profile.php?id=<?php echo $value['id']; ?>" class="btn btn-success">
                       <i class="fa fa-pencil-square" aria-hidden="true"></i>
                     </a>
-                    <a href="delete-user.php?id=<?php echo $value['id']; ?>" class="btn btn-danger">
+                    <a href="delete-doctor.php?id=<?php echo $value['id']; ?>" class="btn btn-danger">
                       <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
                   </td>

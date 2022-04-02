@@ -1,5 +1,8 @@
+<head>
+<title>Doctor Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
-
 session_start();
 require_once('sql.php');
 require_once('include/conn.php');
@@ -42,12 +45,12 @@ include_once('include/Doctor-sidebar.php');
 	<main class="app-content">
 	<div class="app-title">
 		<div>
-			<h1><i class="fa fa-search"></i> Search Doctor</h1>
+			<h1><i class="fa fa-search"></i>Doctor Dashboard</h1>
 			
 		</div>
 		<ul class="app-breadcrumb breadcrumb">
 		
-			User/Search Doctor
+			Doctor Dashboard
 	
 		</ul>
 
@@ -56,7 +59,7 @@ include_once('include/Doctor-sidebar.php');
 		
 		<div class="col-md-9 m-auto">
 			<div class="tile">
-				<h3 class="tile-title text-center text-primary">SEARCH  &nbsp; Approve patient </h3>
+				<h3 class="tile-title text-center text-primary">Search Approved Patients </h3>
 
 				<div class="tile-body">
 					

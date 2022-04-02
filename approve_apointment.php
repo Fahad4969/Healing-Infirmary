@@ -1,6 +1,7 @@
-
-
-
+<head>
+<title>Doctor Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <!-- ================================================================= -->
 <?php
 session_start();
@@ -80,7 +81,7 @@ $time = $_POST['time'];
 
 
 if($stmt->execute()){
-  $message="Insert Row Scuccess";
+  $message="Insert Row Success";
 
 }
 else{
@@ -99,8 +100,7 @@ else{
 <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="fa fa-dashboard"></i> User Dashboard</h1>
-          <p></p>
+          <h1><i class="fa fa-dashboard"></i>Doctor Dashboard</h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>

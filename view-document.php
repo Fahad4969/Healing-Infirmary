@@ -1,3 +1,7 @@
+<head>
+<title>User Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
 session_start();
 include('include/conn.php');
@@ -69,7 +73,7 @@ if (mysqli_num_rows($result1) > 0) {
           <td>Title</td>
 					<td>Date</td>
 					<td>Email</td>
-					<td>Doucument</td>
+					<td>Document</td>
 					<th align="center">Action</th>
 
           </tr>
@@ -89,8 +93,8 @@ if (mysqli_num_rows($result1) > 0) {
 					<td><img src="<?php echo $row["image"]; ?>" alt="Document" style="height: 400px;width: 300px;"></td>
                  
                   <td align="center">
-                  <a href="delete.php ?id= <?php echo $row["email"]; ?>" class="btn btn-success">EDIT</a>
-                    <a href="delete.php ?id= <?php echo $row["email"]; ?>" class="btn btn-danger">DELETE</a>
+                  <a href="delete.php?id=<?php echo $row["email"]; ?>" class="btn btn-success">EDIT</a>
+                    <a href="delete.php?id=<?php echo $row["email"]; ?>" class="btn btn-danger">DELETE</a>
                   </td>
                 </tr>
                 <?php

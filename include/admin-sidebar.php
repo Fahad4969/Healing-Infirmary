@@ -43,7 +43,7 @@
     </li>
 
     <li>
-      <a class="app-menu__item active" href="doctor_registration.php">
+      <a class="app-menu__item active" href="add-doctor-admin.php">
        <i class="app-menu__icon fa fa-edit"></i>
         <span class="app-menu__label">Add Doctor</span>
       </a>
@@ -54,10 +54,22 @@
         <span class="app-menu__label">Add Admin</span>
       </a>
     </li> 
+	    <li>
+      <a class="app-menu__item active" href="view-doctor-profile.php">
+       <i class="app-menu__icon fa fa-edit"></i>
+        <span class="app-menu__label">View Doctors</span>
+      </a>
+    </li>
     <li>
       <a class="app-menu__item active" href="view-profile.php">
        <i class="app-menu__icon fa fa-edit"></i>
         <span class="app-menu__label">View Users</span>
+      </a>
+    </li>
+	<li>
+      <a class="app-menu__item active" href="ambulance-service-admin.php">
+       <i class="app-menu__icon fa fa-edit"></i>
+        <span class="app-menu__label">Ambulance Services</span>
       </a>
     </li>
 

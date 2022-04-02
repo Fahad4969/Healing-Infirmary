@@ -1,5 +1,8 @@
+<head>
+<title>User Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
+</head>
 <?php
-
 session_start();
  require_once('sql.php');
  require_once('include/conn.php');
@@ -47,7 +50,7 @@ include_once('include/user-sidebar.php');
 		</div>
 		<ul class="app-breadcrumb breadcrumb">
 		
-			User/Search Doctor
+			Search Doctor
 	
 		</ul>
 
@@ -56,7 +59,7 @@ include_once('include/user-sidebar.php');
 		
 		<div class="col-md-9 m-auto">
 			<div class="tile">
-				<h3 class="tile-title text-center text-primary">SEARCH  &nbsp; DOCTOR</h3>
+				<h3 class="tile-title text-center text-primary">Search Doctor</h3>
 
 				<div class="tile-body">
 					
