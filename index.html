@@ -48,7 +48,7 @@
 						</li>
 						<li class="">
 							<a href="#" class="text-white">
-								<i class="bi bi-envelope"></i> <a href="mailto:info@healinginfirmary.com">info@healinginfirmary.com</a>
+								<i class="bi bi-envelope"></i> <a href="mailto:healinginfirmary.info@gmail.com">healinginfirmary.info@gmail.com</a>
 							</a>
 						</li>
 						<li class="">
@@ -140,7 +140,6 @@
 							From us you will be able to find best doctors of Bangladesh.
 						</p>
 						<a href="Login.php"><button class="btn bg-info text-light">VIEW SERVICE</button></a>
-						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -153,7 +152,6 @@
 							All the best doctors of Bangladesh are here.
 						</p>
 						<a href="Login.php"><button class="btn bg-info text-light"> VIEW SERVICE</button></a>
-						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -166,7 +164,6 @@
 							Take treatment from our best doctors.
 						</p>
 						<a href="Login.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
-						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 
@@ -180,7 +177,6 @@
 							All the best doctors of Bangladesh are here.
 						</p>
 						<a href="Login.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
-						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 				
@@ -194,7 +190,6 @@
 							Find all the best services from one portal.
 						</p>
 						<a href="Login.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
-						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 				
@@ -208,7 +203,6 @@
 							Get instant Ambulance service.
 						</p>
 						<a href="Ambulance.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
-						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 				
@@ -219,10 +213,9 @@
 							<span class="text-info">Cure</span> with us
 						</h2>
 						<p class="text-dark">
-							Get instant Medicine service.
+							Get instant service.
 						</p>
 						<a href="Login.php"> <button class="btn bg-info text-light">VIEW SERVICE</button> </a>
-						<button class="btn btn-outline-info text-dark">READ MORE</button>
 					</div>
 				</div>
 			</div>
@@ -311,15 +304,12 @@
 					<div class="card">
 						<img src="assets/img/recent1.png" class="card-img" alt="...">
 						<div class="card-body custom_body">
-							<h5 class="card-title">Online Yoga Session. </h5>
-							<p>By <span class="first_color">Rechard Jones</span></p>
-							<p>3 Nov 2021 | <i class="fa fa-comments" aria-hidden="true"></i> 75</p>
+							<h5 class="card-title">Online yoga session. </h5>
+							<p>By <span class="first_color">Fahad Mollah</span></p>
+							<p>3 April 2022 | <i class="fa fa-comments" aria-hidden="true"></i> 5</p>
 							<p class="card-text text-left">
-								It’s time to roll out your yoga mat and discover the combination of physical and mental exercises that for thousands of years have hooked yoga practitioners around the globe. The beauty of yoga is that you don’t have to be a yogi or yogini to reap the benefits
+								It’s time to roll out your yoga mat and discover the combination of physical and mental exercises that for thousands of years have hooked yoga practitioners around the globe.
 							</p>
-							<button class="btn text-left">
-								READ MORE <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-							</button>
 						</div>
 					</div>
 				</div>
@@ -332,15 +322,12 @@
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-7">
 								<div class="custom_body_2">
-									<h4 class="card-title"><b>Online Appointment is Going on.</b></h4>
-									<p>By <span class="first_color">Rechard Jones</span></p>
-									<p>21 Jan 2022 | <i class="fa fa-comments" aria-hidden="true"></i> 75</p>
+									<h4 class="card-title"><b>Online appointment is going on.</b></h4>
+									<p>By <span class="first_color">Ahnaf Sayed</span></p>
+									<p>22 Mar 2022 | <i class="fa fa-comments" aria-hidden="true"></i> 2</p>
 									<p class="card-text text-left">
 										Make appointment for your choosen doctor through Healing Infirmary System.
 									</p>
-									<button class="btn text-left">
-										READ MORE <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-									</button>
 								</div>
 								<!--  -->
 							</div>
@@ -356,15 +343,12 @@
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-7">
 								<div class="custom_body_2">
-									<h4 class="card-title"><b>Do online Fast Aid Course.</b></h4>
-									<p>By <span class="first_color">Rechard Jones</span></p>
-									<p>3 Nov 2021 | <i class="fa fa-comments" aria-hidden="true"></i> 75</p>
+									<h4 class="card-title"><b>Do online fast aid course.</b></h4>
+									<p>By <span class="first_color">Sheck Obidullah</span></p>
+									<p>05 Mar 2022 | <i class="fa fa-comments" aria-hidden="true"></i> 3</p>
 									<p class="card-text text-left">
 										Learn about fast aid more and complete a small paid course from Healing Infirmary System.
 									</p>
-									<button class="btn text-left">
-										READ MORE <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-									</button>
 								</div>
 								<!--  -->
 							</div>
@@ -372,9 +356,6 @@
 					</div>
 
 				</div>
-			</div>
-			<div class="text-center custom_padding_2">
-				<button class="btn btn-outline-info text-dark">BROWSE ALL NEWS</button>
 			</div>
 	</section>
 
@@ -590,19 +571,19 @@
 		document.getElementById("date").innerHTML = n;
 	</script>
 	<!--Start of Tawk.to Script-->
-	<script type="text/javascript">
-		var Tawk_API = Tawk_API || {},
-			Tawk_LoadStart = new Date();
-		(function() {
-			var s1 = document.createElement("script"),
-				s0 = document.getElementsByTagName("script")[0];
-			s1.async = true;
-			s1.src = 'https://embed.tawk.to/617ec192f7c0440a5920cfab/1fjbi89ij';
-			s1.charset = 'UTF-8';
-			s1.setAttribute('crossorigin', '*');
-			s0.parentNode.insertBefore(s1, s0);
-		})();
-	</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/62596c937b967b11798ae6f8/1g0ml08q1';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 	<!--End of Tawk.to Script-->
 </body>
 

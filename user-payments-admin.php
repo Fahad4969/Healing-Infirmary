@@ -33,7 +33,7 @@ header('location:login.php');
 else{
 include_once('include/header.php');
 include_once('include/admin-sidebar.php');
-$sql = 'SELECT * FROM `users` ';
+$sql = 'SELECT * FROM `user_payment` ';
 $message="";
 if(isset($dbh)){
 //connection check
@@ -44,12 +44,12 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <main class="app-content">
   <div class="app-title">
     <div>
-      <h1><i class="fa fa-th-list"></i>User List </h1>
+      <h1><i class="fa fa-th-list"></i>User Payment List </h1>
     </div>
     <ul class="app-breadcrumb breadcrumb side">
       <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
       <li class="breadcrumb-item">Admin Dashboard</li>
-      <li class="breadcrumb-item active"><a href="#">view profile</a></li>
+      <li class="breadcrumb-item active"><a href="#">View Profile</a></li>
     </ul>
   </div>
   <div class="row">
@@ -62,10 +62,11 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <tr>
                   <th>#</th>
                   <th>Name</th>
-                  <th>Email</th>
-                  <th>Mobile</th>
-                  <th>Image</th>
-         
+                  <th>Fee Name</th>
+                  <th>Transaction ID</th>
+                  <th>Additional Info</th>
+                  <th>Last Three Digit</th>
+                  <th>Date</th>
                   <th align="center">Action</th>
                 </tr>
               </thead>
@@ -77,16 +78,13 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <tr>
                   <td><?php echo $count; ?></td>
                   <td><?php echo $value['name']; ?></td>
-                  <td><?php echo $value['email']; ?></td>
-                  <td><?php echo $value['mobile']; ?></td>
-                  <?php echo "<td><img width='100px' height='100px' src='".$value["image"]."'</td>"; ?>
-
-                  
+                  <td><?php echo $value['feename']; ?></td>
+                  <td><?php echo $value['tranxid']; ?></td>
+                  <td><?php echo $value['additionalinfo']; ?></td>
+                  <td><?php echo $value['lastthreedigit']; ?></td>
+                  <td><?php echo $value['date']; ?></td>
                   <td align="center">
-                    <a href="edit-profile.php?id=<?php echo $value['id']; ?>" class="btn btn-success">
-                      <i class="fa fa-pencil-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="delete-user.php?id=<?php echo $value['id']; ?>" class="btn btn-danger">
+                    <a href="delete-user-payment.php?id=<?php echo $value['id']; ?>" class="btn btn-danger">
                       <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
                   </td>

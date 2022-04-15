@@ -1,7 +1,3 @@
-<head>
-<title>Admin Dashboard | Healing Infirmary</title>
-<link rel="icon" href="assets/img/mlogo.png">
-</head>
 <?php
 
 $host='localhost';
@@ -12,7 +8,7 @@ $conn=mysqli_connect($host,$username,$password,"$dbname");
 
 $id = $_GET['id'];
 
-$deletequery = "DELETE FROM doucument WHERE id = $id";
+$deletequery = "DELETE FROM ambulance WHERE id = $id";
 
 $query = mysqli_query($conn,$deletequery);
 
@@ -31,7 +27,6 @@ if($query){
     }
 
 
-header('location:view-document.php');
+header('location:ambulance-service-admin.php');
 
 ?>
-

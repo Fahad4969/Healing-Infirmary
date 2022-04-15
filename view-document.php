@@ -51,7 +51,7 @@ if (mysqli_num_rows($result1) > 0) {
 <main class="app-content">
   <div class="app-title">
     <div>
-      <h1><i class="fa fa-th-list"></i> Data Table</h1>
+      <h1><i class="fa fa-th-list"></i>User History Data Table</h1>
       <p>Table to display analytical data effectively</p>
     </div>
     <ul class="app-breadcrumb breadcrumb side">
@@ -70,10 +70,10 @@ if (mysqli_num_rows($result1) > 0) {
 
           <tr>
 
-          <td>Title</td>
+          <td>Document Title</td>
 					<td>Date</td>
 					<td>Email</td>
-					<td>Document</td>
+					<td>User Document</td>
 					<th align="center">Action</th>
 
           </tr>
@@ -86,15 +86,14 @@ if (mysqli_num_rows($result1) > 0) {
 					                
 				<tr>
                  
-           <td><?php echo $row["doc_type"]; ?></td>
+          <td><?php echo $row["doc_type"]; ?></td>
 					<td><?php echo $row["date"]; ?></td>
 					<td><?php echo $row["email"]; ?></td>
-
 					<td><img src="<?php echo $row["image"]; ?>" alt="Document" style="height: 400px;width: 300px;"></td>
                  
                   <td align="center">
-                  <a href="delete.php?id=<?php echo $row["email"]; ?>" class="btn btn-success">EDIT</a>
-                    <a href="delete.php?id=<?php echo $row["email"]; ?>" class="btn btn-danger">DELETE</a>
+                  <a href="delete.php?id=<?php echo $row["id"]; ?>" class="btn btn-success"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>
+                    <a href="delete.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
                   </td>
                 </tr>
                 <?php

@@ -57,7 +57,7 @@ include_once('include/admin-sidebar.php');
         <div class="col-md-5 col-lg-4">
           <div class="widget-small primary coloured-icon"> <i class="icon fa fa-users fa-3x"> </i>
             <div class="info">
-              <h4>Admin</h4>
+              <h4>Admins</h4>
               <p><b>
                    <?php 
 
@@ -77,7 +77,7 @@ include_once('include/admin-sidebar.php');
         <div class="col-md-5 col-lg-4">
           <div class="widget-small info coloured-icon"><i class=" icon fa fa-user-md"> </i>
             <div class="info">
-              <h4>Doctor</h4>
+              <h4>Doctors</h4>
               <p><b>
                 
                   <?php 
@@ -114,8 +114,28 @@ include_once('include/admin-sidebar.php');
             </div>
           </div>
         </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="widget-small warning coloured-icon"> <i class="icon fa fa-ambulance"> </i>
+            <div class="info">
+              <h4>Ambulance Services</h4>
+              <p><b>
+                   <?php 
 
-        <div class="col-md-7 m-auto">
+                  $admin=$dbh->prepare("SELECT count(id) FROM ambulance");
+
+                  $admin->execute();
+                  $adminrow = $admin->fetch(PDO::FETCH_NUM);
+                  $admincount = $adminrow[0];
+                  echo $admincount;
+                               
+                  ?>
+
+              </b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 m-auto">
       <div class="tile">
         <h3 class="tile-title">Admin Profile</h3>
         <div class="tile-body">

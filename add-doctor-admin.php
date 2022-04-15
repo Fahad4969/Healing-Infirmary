@@ -1,3 +1,6 @@
+<!-- Font-icon css-->
+<title>Admin Dashboard | Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
 <?php
 session_start();
 
@@ -135,9 +138,6 @@ else{
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
     <link rel="stylesheet" type="text/css" href="assets/css/docreg.css">
-    <!-- Font-icon css-->
-    <title>Admin Dashboard | Healing Infirmary</title>
-	<link rel="icon" href="assets/img/mlogo.png">
   </head>
   <body>
     <section class="material-half-bg">
@@ -165,7 +165,7 @@ else{
 
   
 			  <select id="title" name="title" class="form-control">
-			    <option value="dr">Dr.</option>
+			    <option value="Dr">Dr.</option>
 			    <option value="Prof">Prof. Dr.</option>
 			    <option value="Assoc">Assoc. Prof. Dr.</option>
 			    <option value="Asst">Asst. Prof. Dr.</option>
@@ -195,9 +195,6 @@ else{
             <label class="control-label text-dark">BIRTH DATE :<span class="text-danger">*</span></label>
             <input type="date" name="birthdate" id="" class="form-control"  autocomplete="off">
           </div>
-
-          
-
           <div class="form-group">
             <label class="nid text-dark">NID/PASSPORT NO: <span class="text-danger">*</span></label>
             <input type="text" name="nid" id="nid" class="form-control" placeholder="NID/PASSPORT NO" autocomplete="off">
@@ -228,7 +225,6 @@ else{
           <div class="form-group">
             <label class="control-label text-dark"> ADDRESS <span class="text-danger">*</span></label>
             <input type="address" name="address" id="address" class="form-control" placeholder=" YOUR CURRENT ADDRESS" autocomplete="off">
-           
           </div>
 
           <div class="form-group">

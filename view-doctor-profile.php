@@ -95,11 +95,11 @@ $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				  <td><?php echo $value['password']; ?></td>
 				  <td><?php echo $value['address']; ?></td>
 				  <td><?php echo $value['gender']; ?></td>
-				  <td><?php echo $value['image']; ?></td>
+          <?php echo "<td><img width='100px' height='100px' src='".$value["image"]."'</td>";?>
 
                   
                   <td align="center">
-                    <a href="edit-profile.php?id=<?php echo $value['id']; ?>" class="btn btn-success">
+                    <a href="update-doctor-admin.php?id=<?php echo $value['id']; ?>" class="btn btn-success">
                       <i class="fa fa-pencil-square" aria-hidden="true"></i>
                     </a>
                     <a href="delete-doctor.php?id=<?php echo $value['id']; ?>" class="btn btn-danger">

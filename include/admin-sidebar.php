@@ -41,19 +41,24 @@
         <span class="app-menu__label">Dashboard</span>
       </a>
     </li>
-
+    <li>
+      <a class="app-menu__item active" href="admin_registration.php">
+       <i class="app-menu__icon fa fa-edit"></i>
+        <span class="app-menu__label">Add Admin</span>
+      </a>
+    </li>
     <li>
       <a class="app-menu__item active" href="add-doctor-admin.php">
        <i class="app-menu__icon fa fa-edit"></i>
         <span class="app-menu__label">Add Doctor</span>
       </a>
-    </li>
-     <li>
-      <a class="app-menu__item active" href="admin_registration.php">
-       <i class="app-menu__icon fa fa-edit"></i>
-        <span class="app-menu__label">Add Admin</span>
-      </a>
     </li> 
+    <li>
+      <a class="app-menu__item active" href="add-ambulance-admin.php">
+       <i class="app-menu__icon fa fa-edit"></i>
+        <span class="app-menu__label">Add Ambulance Service</span>
+      </a>
+    </li>
 	    <li>
       <a class="app-menu__item active" href="view-doctor-profile.php">
        <i class="app-menu__icon fa fa-edit"></i>
@@ -66,7 +71,13 @@
         <span class="app-menu__label">View Users</span>
       </a>
     </li>
-	<li>
+    <li>
+      <a class="app-menu__item active" href="user-payments-admin.php">
+       <i class="app-menu__icon fa fa-edit"></i>
+        <span class="app-menu__label">User Payments</span>
+      </a>
+   </li>
+	 <li>
       <a class="app-menu__item active" href="ambulance-service-admin.php">
        <i class="app-menu__icon fa fa-edit"></i>
         <span class="app-menu__label">Ambulance Services</span>

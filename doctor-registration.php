@@ -154,7 +154,7 @@ else{
 
   
 			  <select id="title" name="title" class="form-control">
-			    <option value="dr">Dr.</option>
+			    <option value="Dr">Dr.</option>
 			    <option value="Prof">Prof. Dr.</option>
 			    <option value="Assoc">Assoc. Prof. Dr.</option>
 			    <option value="Asst">Asst. Prof. Dr.</option>

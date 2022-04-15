@@ -154,8 +154,8 @@ if (mysqli_num_rows($result) > 0) {
 			  <select id="moneytransfermethod" name="moneytransfermethod" class="form-control">
 			    <option value="Cash">Cash</option>
 			    <option value="Check">Check</option>
-			    <option value="Credit_Card">Credit Card</option>
-			    <option value="Mobile_Banking">Mobile Banking</option>
+			    <option value="Credit Card">Credit Card</option>
+			    <option value="Mobile Banking">Mobile Banking</option>
 			  </select>
 		  </div>
 

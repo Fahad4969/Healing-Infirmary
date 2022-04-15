@@ -98,6 +98,12 @@
         <span class="app-menu__label">Request Donation  </span>
       </a>
     </li>
+	<li>
+      <a class="app-menu__item active" href="user-payment.php">
+       <i class="app-menu__icon fa fa-edit"></i>
+        <span class="app-menu__label">Payment  </span>
+      </a>
+    </li>
 
      <!-- <li>
       <a class="app-menu__item active" href="suggestion-box.php">

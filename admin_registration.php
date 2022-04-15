@@ -1,3 +1,6 @@
+<!-- Font-icon css-->
+<title>Admin Dashboard |  Healing Infirmary</title>
+<link rel="icon" href="assets/img/mlogo.png">
 <?php
 session_start();
 
@@ -113,10 +116,6 @@ else{
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <!-- Font-icon css-->
-    <title>Admin Dashboard |  Healing Infirmary</title>
-	<link rel="icon" href="assets/img/mlogo.png">
-  
   </head>
   <body>
     <section class="material-half-bg">
@@ -152,7 +151,7 @@ else{
           </div>
           <div class="form-group">
             <label class="control-label text-dark">RE-TYPE PASSWORD <span class="text-danger">*</span></label>
-            <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="RE-type Password" autocomplete="off">
+            <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Re-Type Password" autocomplete="off">
             <span id='message'></span>
           </div>
           <div class="form-group">

@@ -44,11 +44,8 @@ if (isset($_post['submit'])) {
  
 
     $result1 = mysqli_query($conn,"UPDATE doctor_reg SET name = '$name', title= '$title' , specialist='$specialist', bmdc='$bmdc', mobile='$mobile', address='$address' Where email='$eamil'");
-
-
-  
     
-    $name = $_POST['name'];
+	$name = $_POST['name'];
     $title = $_POST['title']; 
     $specialist = $_POST['specialist'];
     $bmdc = $_POST['bmdc'];
@@ -57,8 +54,8 @@ if (isset($_post['submit'])) {
     $address = $_POST['address'];
   
     if($result1->execute()){
-      $message="Insert Row Scuccess";
-     header("Location:home.php");
+      $message="Insert Row Success";
+     header("Location:doctor-profile.php");
     }
     else{
      $message="";
@@ -112,7 +109,7 @@ include_once('include/Doctor-sidebar.php');
   
 			  <select id="title" name="title" class="form-control">
         <option value=""><?php echo $row["title"]; ?></option>
-			    <option value="dr">Dr.</option>
+			    <option value="Dr">Dr.</option>
 			    <option value="Prof">Prof. Dr.</option>
 			    <option value="Assoc">Assoc. Prof. Dr.</option>
 			    <option value="Asst">Asst. Prof. Dr.</option>
