@@ -89,7 +89,7 @@ $user="admin";
           
        
         <form action="add-ambulance-admin.php" method="post" class="login-form" enctype="multipart/form-data">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-users"></i>Add Ambulance Service</h3>
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-ambulance"></i>Add Ambulance Service</h3>
            <div class="message text-danger"><?php if($message!="") { echo $message; } ?></div> 
           <div class="form-group">
             <label class="control-label text-dark">Driver Name <span class="text-danger">*</span></label>
