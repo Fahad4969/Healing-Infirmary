@@ -54,7 +54,6 @@ $user="admin";
   
   if($stmt->execute()){
        $message="Insert Row Success";
-      header("Location:add-ambulance-admin.php");
     }
     else{
       $message="Insert Row Fail";

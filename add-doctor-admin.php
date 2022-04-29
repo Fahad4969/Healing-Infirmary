@@ -91,7 +91,7 @@ if($password== $cpassword){
 }
 else{
   $message="confirm password Not match!";
-  header("Location:register.php");
+  header("Location:add-doctor-admin.php");
 }
 
 //check name 
@@ -107,7 +107,6 @@ else{
 //STMT1 FOR LOGIN TABLE
 if($stmt1->execute()){
   $message="Insert Row Success";
- header("Location:add-doctor-admin.php");
 }
 else{
  $message="";
@@ -117,7 +116,6 @@ else{
 }
 if($stmt->execute()){
   $message="Insert Row Success";
- header("add-doctor-admin.php");
 }
 else{
  $message="Insert Row Fail";

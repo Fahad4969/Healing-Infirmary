@@ -78,7 +78,6 @@ if($passwordtest == $confirmpassword){
   
   if($stmt->execute()){
        $message="Insert Row Success";
-      header("Location:admin_registration.php");
     }
     else{
       $message="Insert Row Fail";
@@ -87,7 +86,6 @@ if($passwordtest == $confirmpassword){
   //STMT1 FOR LOGIN TABLE
     if($stmt1->execute()){
       $message="Insert Row Success";
-     header("Location:admin_registration.php");
    }
    else{
      $message="Insert Row Fail";
